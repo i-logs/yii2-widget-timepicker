@@ -1,6 +1,6 @@
 ## i-Logs Fork
 
-This is a fork of [Kartik-v yii2 timepicker widget](https://github.com/kartik-v/yii2-widget-timepicker)]. Our primary intent is to add a custom seperator between hours and minutes instead of the default ':' separator. The separator can be specified depending on the visitor langague. 
+This is a fork of [Kartik-v yii2 timepicker widget](https://github.com/kartik-v/yii2-widget-timepicker). Our primary intent is to add a custom seperator between hours and minutes instead of the default ':' separator. The separator can be specified depending on the visitor langague. 
 
 ## Usage
 
