@@ -31,6 +31,7 @@
         this.upArrowStyle = options.upArrowStyle;
         this.downArrowStyle = options.downArrowStyle;
         this.containerClass = options.containerClass;
+        this.separator = options.separator;
 
         this._init();
     };
@@ -235,7 +236,7 @@
             minute = minute < 10 ? '0' + minute : minute;
             second = second < 10 ? '0' + second : second;
 
-            return hour + ':' + minute + (this.showSeconds ? ':' + second : '') + (this.showMeridian ? ' ' + meridian : '');
+            return hour + this.separator + minute + (this.showSeconds ? ':' + second : '') + (this.showMeridian ? ' ' + meridian : '');
         },
         getCursorPosition: function () {
             var input = this.$element.get(0);
@@ -584,7 +585,7 @@
                 timeArray = arr[0].split(':');
                 this.meridian = arr[1];
             } else {
-                timeArray = time.split(':');
+                timeArray = time.split(this.separator);
             }
 
             this.hour = parseInt(timeArray[0], 10);
@@ -748,7 +749,7 @@
             if (this.$widget === false) {
                 return;
             }
-            var time = $('input.bootstrap-timepicker-hour', this.$widget).val() + ':' +
+            var time = $('input.bootstrap-timepicker-hour', this.$widget).val() + this.separator +
                 $('input.bootstrap-timepicker-minute', this.$widget).val() +
                 (this.showSeconds ? ':' + $('input.bootstrap-timepicker-second', this.$widget).val() : '') +
                 (this.showMeridian ? ' ' + $('input.bootstrap-timepicker-meridian', this.$widget).val() : '');
