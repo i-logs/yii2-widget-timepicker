@@ -31,7 +31,8 @@
         this.upArrowStyle = options.upArrowStyle;
         this.downArrowStyle = options.downArrowStyle;
         this.containerClass = options.containerClass;
-        this.separator = options.separator;
+        this.hourSeparator = options.hourSeparator;
+        this.minuteSeparator = options.minuteSeparator;
 
         this._init();
     };
@@ -236,7 +237,7 @@
             minute = minute < 10 ? '0' + minute : minute;
             second = second < 10 ? '0' + second : second;
 
-            return hour + this.separator + minute + (this.showSeconds ? ':' + second : '') + (this.showMeridian ? ' ' + meridian : '');
+            return hour + this.hourSeparator + minute + (this.showSeconds ? this.minuteSeparator + second : '') + (this.showMeridian ? ' ' + meridian : '');
         },
         getCursorPosition: function () {
             var input = this.$element.get(0);
@@ -582,10 +583,10 @@
 
             if (this.showMeridian) {
                 arr = time.split(' ');
-                timeArray = arr[0].split(':');
+                timeArray = arr[0].split(this.minuteSeparator);
                 this.meridian = arr[1];
             } else {
-                timeArray = time.split(this.separator);
+                timeArray = time.split(this.hourSeparator);
             }
 
             this.hour = parseInt(timeArray[0], 10);
@@ -749,9 +750,9 @@
             if (this.$widget === false) {
                 return;
             }
-            var time = $('input.bootstrap-timepicker-hour', this.$widget).val() + this.separator +
+            var time = $('input.bootstrap-timepicker-hour', this.$widget).val() + this.hourSeparator +
                 $('input.bootstrap-timepicker-minute', this.$widget).val() +
-                (this.showSeconds ? ':' + $('input.bootstrap-timepicker-second', this.$widget).val() : '') +
+                (this.showSeconds ? this.minuteSeparator + $('input.bootstrap-timepicker-second', this.$widget).val() : '') +
                 (this.showMeridian ? ' ' + $('input.bootstrap-timepicker-meridian', this.$widget).val() : '');
 
             this.setTime(time);
@@ -865,7 +866,8 @@
         upArrowStyle: 'glyphicon glyphicon-chevron-up',
         downArrowStyle: 'glyphicon glyphicon-chevron-down',
         containerClass: 'bootstrap-timepicker',
-        separator: ':'
+        hourSeparator: ':',
+        minuteSeparator: ':',
     };
 
     $.fn.timepicker.Constructor = Timepicker;
