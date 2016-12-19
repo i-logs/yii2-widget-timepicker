@@ -1,8 +1,27 @@
-yii2-widget-timepicker
-======================
+## i-Logs Fork
+
 This is a fork of [Kartik-v yii2 timepicker widget](https://github.com/kartik-v/yii2-widget-timepicker)]. Our primary intent is to add a custom seperator between hours and minutes instead of the default ':' separator. The separator can be specified depending on the visitor langague. 
 
-Below is the original documentation from Kartik:
+## Usage
+
+```php
+use i-logs\time\TimePicker;
+
+// usage without model
+echo '<label>Start Time</label>';
+echo TimePicker::widget([
+	'name' => 'start_time', 
+	'value' => '11:24 AM',
+	'pluginOptions' => [
+		'showSeconds' => true
+		'hourSeparator' => 'h',
+		'minSeparator' => 'm',
+	]
+]);
+```
+
+For more information, please refer to the original documentation from Kartik below.
+
 
 yii2-widget-timepicker
 ======================
