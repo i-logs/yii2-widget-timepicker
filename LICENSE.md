@@ -1,3 +1,7 @@
+Copyright (c) 2016, i-Logs SPRL
+http://i-logs.com
+All rights reserved 
+
 Copyright (c) 2014 - 2016, Kartik Visweswaran  
 Krajee.com  
 All rights reserved.  
@@ -12,9 +16,10 @@ are permitted provided that the following conditions are met:
   list of conditions and the following disclaimer in the documentation and/or
   other materials provided with the distribution.
 
-* Neither the names of Kartik Visweswaran or Krajee nor the names of its
-  contributors may be used to endorse or promote products derived from
-  this software without specific prior written permission.
+* Neither the names of i-Logs SPRL, i-logs, Boris Verdeyen, Grégoire Welraeds, 
+  Kartik Visweswaran or Krajee nor the names of its contributors may be used 
+  to endorse or promote products derived from this software without specific 
+  prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
