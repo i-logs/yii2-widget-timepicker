@@ -864,7 +864,8 @@
         appendWidgetTo: '.bootstrap-timepicker',
         upArrowStyle: 'glyphicon glyphicon-chevron-up',
         downArrowStyle: 'glyphicon glyphicon-chevron-down',
-        containerClass: 'bootstrap-timepicker'
+        containerClass: 'bootstrap-timepicker',
+        separator: ':'
     };
 
     $.fn.timepicker.Constructor = Timepicker;
