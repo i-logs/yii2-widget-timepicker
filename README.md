@@ -1,5 +1,11 @@
 yii2-widget-timepicker
 ======================
+This is a fork of [Kartik-v yii2 timepicker widget](https://github.com/kartik-v/yii2-widget-timepicker)]. Our primary intent is to add a custom seperator between hours and minutes instead of the default ':' separator. The separator can be specified depending on the visitor langague. 
+
+Below is the original documentation from Kartik:
+
+yii2-widget-timepicker
+======================
 
 [![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-timepicker/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-timepicker)
 [![License](https://poser.pugx.org/kartik-v/yii2-widget-timepicker/license)](https://packagist.org/packages/kartik-v/yii2-widget-timepicker)
