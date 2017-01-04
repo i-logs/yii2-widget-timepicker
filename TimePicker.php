@@ -7,7 +7,7 @@
  * @version 1.0.1
  */
 
-namespace kartik\time;
+namespace ilogs\time;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
