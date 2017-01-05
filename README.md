@@ -5,7 +5,7 @@ This is a fork of [Kartik-v yii2 timepicker widget](https://github.com/kartik-v/
 ## Usage
 
 ```php
-use i-logs\time\TimePicker;
+use ilogs\time\TimePicker;
 
 // usage without model
 echo '<label>Start Time</label>';
